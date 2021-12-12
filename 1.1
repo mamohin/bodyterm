@@ -1,0 +1,10 @@
+dallas_requestTemp(DS_PIN); // запрос
+ delay(1000);
+ t0 = tt;
+ tt = dallas_getTemp(DS_PIN);
+ LCD.setFont(BigNumbers);
+ LCD.printNumF(tt, 1, CENTER, st0);
+ LCD.setFont(MediumNumbers);
+ LCD.printNumF(t0, 1, CENTER, st3);
+ delay(1000);
+}
